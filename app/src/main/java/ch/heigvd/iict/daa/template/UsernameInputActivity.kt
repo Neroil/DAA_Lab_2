@@ -13,6 +13,9 @@ class UsernameInputActivity : AppCompatActivity() {
 
         val textField = findViewById<EditText>(R.id.usernameInput)
         val button = findViewById<Button>(R.id.saveUsername)
+
+        textField.setText(intent.getStringExtra("existingName"))
+
         button.setOnClickListener {
             val fieldValue = textField.text.toString()
             val data = Intent()
@@ -24,7 +27,7 @@ class UsernameInputActivity : AppCompatActivity() {
     }
 
     companion object{
-        val USERNAME_KEY = "NAME_KEY"
+        const val USERNAME_KEY = "NAME_KEY"
     }
 
 }

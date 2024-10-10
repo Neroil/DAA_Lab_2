@@ -5,16 +5,18 @@ import android.content.Context
 import android.content.Intent
 import androidx.activity.result.contract.ActivityResultContract
 
-class PickNameContract : ActivityResultContract<Void?, String?>() {
-    override fun createIntent(context: Context, input: Void?): Intent =
-        Intent(context, UsernameInputActivity::class.java)
+class PickNameContract : ActivityResultContract<String?, String?>() {
+    override fun createIntent(context: Context, input: String?): Intent =
+        Intent(context, UsernameInputActivity::class.java).apply {
+            putExtra("existingName", input)
+        }
 
 
-    override fun parseResult(resultCode: Int, result: Intent?): String? {
+    override fun parseResult(resultCode: Int, intent: Intent?): String? {
         if(resultCode != Activity.RESULT_OK) {
             return null
         }
 
-        return result?.getStringExtra(UsernameInputActivity.USERNAME_KEY)
+        return intent?.getStringExtra(UsernameInputActivity.USERNAME_KEY)
     }
 }
