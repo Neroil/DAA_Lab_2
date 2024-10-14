@@ -6,6 +6,9 @@ Classe : A
 
 <div style="page-break-after: always;"></div>
 
+## Intro
+Le but de ce laboratoire est de se familiariser avec les concepts d'activité et de fragment dans l'environnement Android.
+
 ## Les activités
 
 ### Implémentation
