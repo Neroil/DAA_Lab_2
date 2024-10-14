@@ -1,12 +1,15 @@
-# Labo 2 DAA
+# DAA - Laboratoire n°2
 
 Auteurs : Junod Arthur, Dunant Guillaume, Häffner Edwin
+
 Date : 14 Octobre 2024
+
 Classe : A
 
 <div style="page-break-after: always;"></div>
 
-## Intro
+## Introduction
+
 Le but de ce laboratoire est de se familiariser avec les concepts d'activité et de fragment dans l'environnement Android.
 
 ## Les activités
@@ -44,8 +47,6 @@ Diagramme d'activité :
 Il faut sauvegarder l'état de notre message de bienvenue dans un `Bundle` à la destruction de la première activité `Main` (`onSaveInstanceState()`) puis, si un `Bundle` existe, récupérer son état à la création d'une nouvelle activité (`onCreate()`). Car quand nous pivotons notre écran, une nouvelle activité est créés pour l'affichage en paysage qui va exécuter le même code.
 
 La deuxième activité, où l'on peut éditer notre nom, ne comporte pas le même problème car elle contient non pas un `TextField` mais un `EditText` qui est gardé en mémoire dans la `View` ce qui évite de perdre sa valeur quand nous pivotons et créons une nouvelle activité.
-
-
 
 ## Les fragments
 
