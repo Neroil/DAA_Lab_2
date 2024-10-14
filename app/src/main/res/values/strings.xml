@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Labo 2</string>
     <string name="welcome">Bienvenue, veuillez enter votre nom</string>
+    <string name="edit" />
 </resources>

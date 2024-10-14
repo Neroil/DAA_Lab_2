@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import ch.heigvd.iict.daa.template.fragments.ColorFragment
 import ch.heigvd.iict.daa.template.fragments.CounterFragment
+import ch.heigvd.iict.daa.template.fragments.StepFragment
 
 class ActivityFragment : AppCompatActivity() {
 
@@ -14,7 +15,7 @@ class ActivityFragment : AppCompatActivity() {
         setContentView(R.layout.activity_fragment)
 
         if (savedInstanceState == null) {
-            replaceFragment(ColorFragment())
+            replaceFragment(StepFragment())
         }
 
         findViewById<Button>(R.id.next).setOnClickListener {
@@ -32,7 +33,7 @@ class ActivityFragment : AppCompatActivity() {
 
     private fun navigateToNextFragment() {
         when (supportFragmentManager.findFragmentById(R.id.fragments)) {
-            is ColorFragment -> replaceFragment(CounterFragment())
+            is StepFragment -> replaceFragment(StepFragment())
         }
     }
 
