@@ -48,7 +48,7 @@ La deuxième activité, où l'on peut éditer notre nom, ne comporte pas le mêm
 
 ### Implémentation
 
-L'implémentation de l'exercice sur les fragments se trouve dans la *main_activity2*. Pour afficher les deux fragments, nous avons du adapter le nom du package des fragments à notre projet puis les importer en tant que widget grâce au *FragmentContainerView*.
+L'implémentation de l'exercice sur les fragments se trouve dans la *main_activity2.xml*. Pour afficher les deux fragments, nous avons du adapter le nom du package des fragments à notre projet puis les importer en tant que widget grâce au *FragmentContainerView*. Pour l'utiliser, il faut mettre *MainActivity2* en tant qu'activité principal dans le fichier manifest.
 
 ### Questions
 
