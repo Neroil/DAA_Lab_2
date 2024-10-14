@@ -5,6 +5,10 @@ import android.content.Context
 import android.content.Intent
 import androidx.activity.result.contract.ActivityResultContract
 
+/*
+Auteurs : Junod Arthur, Dunant Guillaume et Häffner Edwin
+Permet de creer l'activité de modification du nom de l'utilisateur et fait le lien avec l'activité principale
+ */
 class PickNameContract : ActivityResultContract<String?, String?>() {
     override fun createIntent(context: Context, input: String?): Intent =
         Intent(context, UsernameInputActivity::class.java).apply {

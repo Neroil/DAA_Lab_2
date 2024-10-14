@@ -1,6 +1,5 @@
 package ch.heigvd.iict.daa.template.fragments
 
-
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -9,6 +8,10 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import ch.heigvd.iict.daa.template.R
 
+/*
+Auteurs : Junod Arthur, Dunant Guillaume et Häffner Edwin
+Un fragment qui affiche le numéro de l'étape dans la pile
+ */
 class StepFragment : Fragment() {
 
     override fun onCreateView(

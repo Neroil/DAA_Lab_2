@@ -6,7 +6,12 @@ import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 
+/*
+Auteurs : Junod Arthur, Dunant Guillaume et Häffner Edwin
+Activité qui permet de demander à l'utilisateur de saisir son nom ou de le modifier
+ */
 class UsernameInputActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_username_input)
@@ -23,11 +28,9 @@ class UsernameInputActivity : AppCompatActivity() {
             setResult(RESULT_OK, data)
             finish()
         }
-
     }
 
     companion object{
         const val USERNAME_KEY = "NAME_KEY"
     }
-
 }

@@ -1,20 +1,22 @@
 package ch.heigvd.iict.daa.template
 
-import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
-import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import ch.heigvd.iict.daa.template.UsernameInputActivity.Companion.USERNAME_KEY
 
+/*
+Auteurs : Junod Arthur, Dunant Guillaume et Häffner Edwin
+Affiche le nom de l'utilisateur et permet de le modifier
+ */
 class MainActivity : AppCompatActivity() {
 
     private lateinit var welcomingTxt: TextView
     private var name : String? = null
 
     private val getName = registerForActivityResult(PickNameContract()) {
-        // on reçoit le résultat de la seconde activité ici
+        //On reçoit le résultat de la seconde activité ici
         if (it != null) {
             name = it
             welcomingTxt.text = "Bienvenue $it!"
@@ -41,8 +43,4 @@ class MainActivity : AppCompatActivity() {
         outState.putString("name", name)
     }
 
-
-    companion object{
-        const val NAME_EDITED = "NAME_EDITED"
-    }
 }

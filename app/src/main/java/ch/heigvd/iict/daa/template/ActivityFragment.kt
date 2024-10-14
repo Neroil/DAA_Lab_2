@@ -4,10 +4,12 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import ch.heigvd.iict.daa.template.fragments.ColorFragment
-import ch.heigvd.iict.daa.template.fragments.CounterFragment
 import ch.heigvd.iict.daa.template.fragments.StepFragment
 
+/*
+Auteurs : Junod Arthur, Dunant Guillaume et Häffner Edwin
+Activité qui gère la navigation entre les fragments
+ */
 class ActivityFragment : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
