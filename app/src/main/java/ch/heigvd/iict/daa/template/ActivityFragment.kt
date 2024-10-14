@@ -19,7 +19,7 @@ class ActivityFragment : AppCompatActivity() {
         }
 
         findViewById<Button>(R.id.next).setOnClickListener {
-            navigateToNextFragment()
+            replaceFragment(StepFragment())
         }
 
         findViewById<Button>(R.id.back).setOnClickListener {
@@ -28,12 +28,6 @@ class ActivityFragment : AppCompatActivity() {
 
         findViewById<Button>(R.id.close).setOnClickListener {
             finish()
-        }
-    }
-
-    private fun navigateToNextFragment() {
-        when (supportFragmentManager.findFragmentById(R.id.fragments)) {
-            is StepFragment -> replaceFragment(StepFragment())
         }
     }
 
