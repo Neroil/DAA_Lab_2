@@ -1,6 +1,10 @@
 # Labo 2 DAA
 
 Auteurs : Junod Arthur, Dunant Guillaume, Häffner Edwin
+Date : 14 Octobre 2024
+Classe : A
+
+<div style="page-break-after: always;"></div>
 
 ## Les activités
 
@@ -62,7 +66,7 @@ Lors d'une rotation de l'écran, le fragment est stoppé puis redémarré, ce qu
 
 ### Implémentation
 
-#### l'ActivitiyFragment
+#### L'ActivitiyFragment
 
 Nous avons une nouvelle classe Kotlin `ActivityFragment` avec son layout dans `activity_fragment.xml` qui nous permet de gérer la "backStack" remplie (ou non) des différents `fragmentStep`. 
 
