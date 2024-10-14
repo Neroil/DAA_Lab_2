@@ -30,7 +30,7 @@ class UsernameInputActivity : AppCompatActivity() {
         }
     }
 
-    companion object{
+    companion object {
         const val USERNAME_KEY = "NAME_KEY"
     }
 }

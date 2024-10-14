@@ -1,6 +1,16 @@
-# Labo 2 DAA
+# DAA - Laboratoire n°2
 
 Auteurs : Junod Arthur, Dunant Guillaume, Häffner Edwin
+
+Date : 14 Octobre 2024
+
+Classe : A
+
+<div style="page-break-after: always;"></div>
+
+## Introduction
+
+Le but de ce laboratoire est de se familiariser avec les concepts d'activité et de fragment dans l'environnement Android.
 
 ## Les activités
 
@@ -38,13 +48,11 @@ Il faut sauvegarder l'état de notre message de bienvenue dans un `Bundle` à la
 
 La deuxième activité, où l'on peut éditer notre nom, ne comporte pas le même problème car elle contient non pas un `TextField` mais un `EditText` qui est gardé en mémoire dans la `View` ce qui évite de perdre sa valeur quand nous pivotons et créons une nouvelle activité.
 
-
-
 ## Les fragments
 
 ### Implémentation
 
-L'implémentation de l'exercice sur les fragments se trouve dans la *main_activity2*. Pour afficher les deux fragments, nous avons du adapter le nom du package des fragments à notre projet puis les importer en tant que widget grâce au *FragmentContainerView*.
+L'implémentation de l'exercice sur les fragments se trouve dans la *main_activity2.xml*. Pour afficher les deux fragments, nous avons du adapter le nom du package des fragments à notre projet puis les importer en tant que widget grâce au *FragmentContainerView*. Pour l'utiliser, il faut mettre *MainActivity2* en tant qu'activité principal dans le fichier manifest.
 
 ### Questions
 
@@ -62,7 +70,7 @@ Lors d'une rotation de l'écran, le fragment est stoppé puis redémarré, ce qu
 
 ### Implémentation
 
-#### l'ActivitiyFragment
+#### L'ActivitiyFragment
 
 Nous avons une nouvelle classe Kotlin `ActivityFragment` avec son layout dans `activity_fragment.xml` qui nous permet de gérer la "backStack" remplie (ou non) des différents `fragmentStep`. 
 

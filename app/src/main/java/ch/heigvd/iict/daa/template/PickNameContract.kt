@@ -17,7 +17,7 @@ class PickNameContract : ActivityResultContract<String?, String?>() {
 
 
     override fun parseResult(resultCode: Int, intent: Intent?): String? {
-        if(resultCode != Activity.RESULT_OK) {
+        if (resultCode != Activity.RESULT_OK) {
             return null
         }
 
